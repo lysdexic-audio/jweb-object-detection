@@ -34,7 +34,7 @@ This demo uses a model trained on the COCO dataset. It can identify [80 differen
 
 ## Notes
 
-Still images seem to work best when faces are not too far from the camera.
+Still images seem to work best when objects are not too far from the camera.
 
 ## Resources
 

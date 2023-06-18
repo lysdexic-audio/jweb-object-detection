@@ -1,6 +1,6 @@
 # jweb-object-detection
 
-A self contained example demonstrating how to use MediaPipe Object Detection with Max's `jweb`
+A self contained example demonstrating how to use MediaPipe Object Detection with Max's `jweb` connected to either a live webcamera stream or using still images.
 
 ![Max example patcher screenshot](jweb-object-detect.gif)
 
@@ -32,7 +32,9 @@ This demo uses a model trained on the COCO dataset. It can identify [80 differen
 | refrigerator | book | clock | vase | 
 | scissors |  teddy bear | hair drier | toothbrush | 
 
+## Notes
 
+Still images seem to work best when faces are not too far from the camera.
 
 ## Resources
 

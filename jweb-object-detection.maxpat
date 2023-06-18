@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 1732.0, 222.0, 981.0, 1220.0 ],
+		"rect" : [ 59.0, 127.0, 1071.0, 1236.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -40,6 +40,70 @@
 		"assistshowspatchername" : 0,
 		"boxes" : [ 			{
 				"box" : 				{
+					"fontname" : "Arial",
+					"fontsize" : 12.0,
+					"id" : "obj-16",
+					"maxclass" : "live.text",
+					"mode" : 0,
+					"numinlets" : 1,
+					"numoutlets" : 2,
+					"outlettype" : [ "", "" ],
+					"parameter_enable" : 1,
+					"patching_rect" : [ 688.0, 73.0, 130.0, 26.0 ],
+					"saved_attribute_attributes" : 					{
+						"valueof" : 						{
+							"parameter_enum" : [ "val1", "val2" ],
+							"parameter_longname" : "live.text",
+							"parameter_mmax" : 1,
+							"parameter_shortname" : "live.text",
+							"parameter_type" : 2
+						}
+
+					}
+,
+					"text" : "Load Image",
+					"varname" : "live.text"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-97",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 2,
+					"outlettype" : [ "", "int" ],
+					"patching_rect" : [ 688.0, 139.0, 137.0, 22.0 ],
+					"text" : "conformpath native boot"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-82",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 2,
+					"outlettype" : [ "", "bang" ],
+					"patching_rect" : [ 688.0, 107.0, 130.0, 22.0 ],
+					"text" : "opendialog .JPG .PNG"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-78",
+					"maxclass" : "message",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 688.0, 169.0, 81.0, 22.0 ],
+					"text" : "set_image $1"
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"id" : "obj-15",
 					"maxclass" : "newobj",
 					"numinlets" : 1,
@@ -68,7 +132,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 683.0, 169.0, 115.0, 22.0 ],
+					"patching_rect" : [ 439.0, 169.0, 115.0, 22.0 ],
 					"text" : "set_mediadevice $1"
 				}
 
@@ -389,7 +453,7 @@
  ]
 					}
 ,
-					"patching_rect" : [ 683.5, 107.0, 83.0, 22.0 ],
+					"patching_rect" : [ 439.5, 107.0, 83.0, 22.0 ],
 					"saved_object_attributes" : 					{
 						"description" : "",
 						"digest" : "",
@@ -408,7 +472,7 @@
 					"numinlets" : 0,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 773.0, 107.0, 89.0, 22.0 ],
+					"patching_rect" : [ 529.0, 107.0, 89.0, 22.0 ],
 					"text" : "r mediadevices"
 				}
 
@@ -427,13 +491,13 @@
 , 			{
 				"box" : 				{
 					"id" : "obj-2",
-					"items" : [ "Logitech BRIO (046d:085e)", ",", "FaceTime HD Camera" ],
+					"items" : "Logitech BRIO (046d:085e)",
 					"maxclass" : "umenu",
 					"numinlets" : 1,
 					"numoutlets" : 3,
 					"outlettype" : [ "int", "", "" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 683.0, 135.0, 234.0, 22.0 ]
+					"patching_rect" : [ 439.0, 135.0, 234.0, 22.0 ]
 				}
 
 			}
@@ -444,7 +508,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 812.0, 169.0, 105.0, 22.0 ],
+					"patching_rect" : [ 568.0, 169.0, 105.0, 22.0 ],
 					"text" : "get_mediadevices"
 				}
 
@@ -1214,7 +1278,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 452.0, 99.0, 70.0, 22.0 ],
+					"patching_rect" : [ 838.0, 99.0, 70.0, 22.0 ],
 					"text" : "loadmess 1"
 				}
 
@@ -1227,7 +1291,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "int" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 550.0, 139.0, 24.0, 24.0 ]
+					"patching_rect" : [ 936.0, 139.0, 24.0, 24.0 ]
 				}
 
 			}
@@ -1238,7 +1302,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 550.0, 169.0, 113.0, 22.0 ],
+					"patching_rect" : [ 936.0, 169.0, 113.0, 22.0 ],
 					"text" : "draw_detections $1"
 				}
 
@@ -1251,7 +1315,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "int" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 452.0, 139.0, 24.0, 24.0 ]
+					"patching_rect" : [ 838.0, 139.0, 24.0, 24.0 ]
 				}
 
 			}
@@ -1262,7 +1326,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 452.0, 169.0, 91.0, 22.0 ],
+					"patching_rect" : [ 838.0, 169.0, 91.0, 22.0 ],
 					"text" : "draw_image $1"
 				}
 
@@ -1399,6 +1463,13 @@
 				"patchline" : 				{
 					"destination" : [ "obj-1", 0 ],
 					"source" : [ "obj-13", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-82", 0 ],
+					"source" : [ "obj-16", 0 ]
 				}
 
 			}
@@ -1567,8 +1638,22 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-1", 0 ],
+					"source" : [ "obj-78", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-3", 0 ],
 					"source" : [ "obj-8", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-97", 0 ],
+					"source" : [ "obj-82", 0 ]
 				}
 
 			}
@@ -1600,7 +1685,28 @@
 				}
 
 			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-78", 0 ],
+					"source" : [ "obj-97", 0 ]
+				}
+
+			}
  ],
+		"parameters" : 		{
+			"obj-16" : [ "live.text", "live.text", 0 ],
+			"parameterbanks" : 			{
+				"0" : 				{
+					"index" : 0,
+					"name" : "",
+					"parameters" : [ "-", "-", "-", "-", "-", "-", "-", "-" ]
+				}
+
+			}
+,
+			"inherited_shortname" : 1
+		}
+,
 		"dependency_cache" : [  ],
 		"autosave" : 0
 	}
